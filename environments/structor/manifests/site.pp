@@ -42,6 +42,10 @@ if hasrole($roles, 'cert') {
    include certification
 }
 
+if hasrole($roles, 'zeppelin') {
+  include zeppelin
+}
+
 if hasrole($roles, 'client') {
   if hasrole($clients, 'hbase') {
     include hbase_client
